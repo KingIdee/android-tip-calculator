@@ -7,85 +7,12 @@
   tools:context=".MainActivity">
 
   <TextView
-    android:id="@+id/billTextView"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="20dp"
-    android:text="@string/bill"
-    app:layout_constraintStart_toStartOf="parent"
+    android:text="Hello World!"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
-
-  <EditText
-    android:id="@+id/billAmount"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    android:inputType="numberDecimal"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toEndOf="@id/billTextView" />
-
-  <TextView
-    android:id="@+id/peopleCountTextView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="20dp"
-    android:text="@string/number_of_people"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/billTextView" />
-
-  <EditText
-    android:id="@+id/peopleCount"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    android:inputType="number"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toEndOf="@id/peopleCountTextView"
-    app:layout_constraintTop_toBottomOf="@id/billTextView" />
-
-  <TextView
-    android:id="@+id/tipPercentTextView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="20dp"
-    android:text="@string/tip_percentage"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/peopleCountTextView" />
-
-  <EditText
-    android:id="@+id/tipPercent"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    android:inputType="numberDecimal"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toEndOf="@id/tipPercentTextView"
-    app:layout_constraintTop_toBottomOf="@id/peopleCountTextView" />
-
-  <TextView
-    android:id="@+id/totalTipTextView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="20dp"
-    android:text="@string/total_tip_per_person"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/tipPercentTextView" />
-
-  <TextView
-    android:id="@+id/totalTipPerPerson"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toEndOf="@id/totalTipTextView"
-    app:layout_constraintTop_toTopOf="@id/totalTipTextView" />
 
 </android.support.constraint.ConstraintLayout>
