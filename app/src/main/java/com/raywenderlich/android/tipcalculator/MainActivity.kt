@@ -11,8 +11,6 @@ class MainActivity : AppCompatActivity() {
   private var tipPercentDouble = 0.0
   var billAmountDouble = 0.0
   private var count = 0
-  //lateinit var textWatcher : TextWatcher
-
 
   private val textWatcher = object : TextWatcher {
 
@@ -48,7 +46,7 @@ class MainActivity : AppCompatActivity() {
       tipPercentDouble = tipPercent.text.toString().toDouble()
     }
 
-   if (billAmount.text.isNotEmpty()) {
+    if (billAmount.text.isNotEmpty()) {
       billAmountDouble = billAmount.text.toString().toDouble()
     }
 
